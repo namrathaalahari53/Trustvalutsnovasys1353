@@ -1,0 +1,6 @@
+{
+  "name": "TrustVault",
+  "description": "Secure Document Sharing with a Real Audit Trail, Argon2id authentication, default-deny authorization, immediate permission revocation, and SHA-256 tamper-evident hash-chained audit logging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

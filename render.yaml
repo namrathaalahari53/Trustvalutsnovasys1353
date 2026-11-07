@@ -1,0 +1,19 @@
+# Render.com Blueprint Specification for TrustVault
+# Zero-config 1-click deployment on Render Web Services
+services:
+  - type: web
+    name: trustvault
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
